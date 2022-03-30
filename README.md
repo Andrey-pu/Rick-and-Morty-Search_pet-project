@@ -23,4 +23,4 @@
 ##### 2 уровень (необязательный)
 -  Только TypeScript
 
-### [Github Pages](https://nodejs.org/)
+### [Github Pages](https://andrey-pu.github.io/Rick-and-Morty-Search_pet-project)
