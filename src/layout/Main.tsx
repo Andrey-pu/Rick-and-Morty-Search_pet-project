@@ -1,6 +1,5 @@
 import { Box } from '@chakra-ui/react'
-import { Characters } from '../components/Cards/Characters'
-
+import { Characters } from '../components/CharacterList/Characters'
 import { Pagination } from '../components/Pagination/Pagination'
 import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { prevPage, nextPage } from '../store/reducers/CharacterSlice'
@@ -23,7 +22,6 @@ export default function Main() {
 			</Box>
 			<Pagination pageNumber={pageNumber} prev={prev} next={next}></Pagination>
 			<Characters />
-			
 		</>
 	)
 }

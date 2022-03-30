@@ -1,17 +1,8 @@
-import {
-	Box,
-	Flex,
-	Image,
-	useColorModeValue,
-	HStack,
-} from '@chakra-ui/react'
-
-
+import { Box, Flex, Image, useColorModeValue, HStack } from '@chakra-ui/react'
 
 import { ColorModeSwitcher } from '../components/ColorModeSwitcher'
 import { Search } from '../components/Search/Search'
 import Logo from './L.svg'
-
 
 // const Links = ['characters', 'Episode', 'Location']
 
@@ -34,12 +25,10 @@ const Header = () => {
 	// const { colorMode } = useColorMode()
 	// const { isOpen, onOpen, onClose } = useDisclosure()
 
-	
 	return (
 		<>
 			<Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
 				<Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-					
 					<HStack spacing={8} alignItems={'center'}>
 						<Image src={Logo} alt='1' boxSize='200px' />
 						{/* <HStack
@@ -53,15 +42,15 @@ const Header = () => {
 						</HStack> */}
 					</HStack>
 					<Flex alignItems={'center'}>
-						<Box><Search/></Box>
-						
+						<Box>
+							<Search />
+						</Box>
+
 						<ColorModeSwitcher />
 					</Flex>
 				</Flex>
-
 			</Box>
 		</>
-		
 	)
 }
 export { Header }
